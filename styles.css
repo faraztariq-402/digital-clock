@@ -1,0 +1,32 @@
+@import url(./fonts/Digital\ Dismay.ttf);
+p {
+  display: flex;
+  margin: 0.2rem;
+  padding: 0.7rem;
+}
+
+.clock {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "digital", sans-serif;
+  margin-top: 1rem;
+ 
+}
+
+.fullTime {
+  display: flex;
+  border: 4px solid black;
+  box-shadow: 7px 7px rgb(70, 57, 57);
+}
+
+* {
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  background-color: beige;
+  text-align: center;
+}
+
+
