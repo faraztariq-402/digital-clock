@@ -1,8 +1,12 @@
-@import url(./fonts/Digital\ Dismay.ttf);
+@font-face {
+  font-family: 'Digital Numbers Regular';
+  font-style: italic;
+  font-weight: bolder;
+  src: local('Digital Numbers Regular'), url('./DigitalNumbers-Regular.woff') format('woff');
+  }
 p {
   display: flex;
-  margin: 0.2rem;
-  padding: 0.7rem;
+
 }
 
 .clock {
@@ -10,23 +14,41 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "digital", sans-serif;
+  font-family: 'Digital Numbers Regular';
   margin-top: 1rem;
  
 }
 
 .fullTime {
   display: flex;
-  border: 4px solid black;
-  box-shadow: 7px 7px rgb(70, 57, 57);
+  border: 7px solid black;
+  padding: 4rem;
 }
 
 * {
-  font-size: 1rem;
+ 
   font-weight: bold;
   color: red;
-  background-color: beige;
+  background-color: rgb(20, 20, 16);
   text-align: center;
 }
 
 
+@media screen and (min-width:750px) {
+  .fullTime{
+    font-size: 3.5rem;
+  }
+  #amPm{
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width:750px) {
+  .fullTime{
+    padding: 2rem;
+  font-size: 1.5rem;
+
+  }
+  #amPm{
+    margin-left: 1.4rem;
+  }
+}
